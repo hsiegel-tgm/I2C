@@ -1,0 +1,132 @@
+\documentclass[12pt]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage{amsmath}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{ulem}
+\usepackage{caption}
+\usepackage{placeins}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{listings}
+\usepackage{fixltx2e}
+\usepackage{scrpage2}
+\usepackage{lastpage}
+\clearscrheadfoot
+\pagestyle{scrheadings}
+\usepackage{glossaries}
+\usepackage[
+top    = 2.75cm,
+bottom = 2.00cm,
+left   = 2.50cm,
+right  = 2.00cm]{geometry}
+\setcounter{secnumdepth}{4}
+
+
+\makeglossaries
+
+\newglossaryentry{glossaryVerweis} {name=abkuerzung, description={Langer Name}}
+
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+% Oberer Teil der Titelseite:
+\includegraphics[width=0.5\textwidth]{images/logo}\\[1cm]    
+
+\textsc{\LARGE Technologisches Gewerbe Museum}\\[1.5cm]
+
+% Title
+\rule{12cm}{1mm}
+{ \huge \bfseries  \\ \huge I2C \\ \large SYT IndInf\\[0.4cm] }
+
+\rule{12cm}{1mm}
+
+% Author and supervisor
+\noindent 
+\vspace{5cm}
+
+\begin{center}
+\large
+Authors: 
+Janeczek  \&
+Mair \&
+Siegel  \&
+Vogt 
+\end{center}
+
+\vfill
+
+% Bottom of the page
+{\large \today}
+
+\end{center}
+\end{titlepage}
+
+\tableofcontents
+
+
+%HEADER AND FOOTER
+\pagenumbering{arabic}
+\ohead{\headmark}
+\automark{section}
+\ifoot{© Authors}
+\ofoot{\pagemark ~of \pageref{LastPage}}
+
+\newpage
+
+
+\section{Task Description}
+%TODO
+\subsection{Team}
+We met on Saturday, 10.01.2015 as a Team in the School. \\
+We did the example together, because we were not able to do it by ourselves and we only had one Sensor (ADXL345).
+Therefore we started the example together. We have done it in this team, and the Code is not a copy from anybody else from our class. We have also all understood I2C. \\
+We thought, that it would be fine if we would form a team, and we hope that this is not a problem. We are happy to show the program working on each our stations if required to proove that we have all done it equally.
+Every Person from the Team has commented the source code by themselves, but still it will be quite the same.
+\section{Working time}
+\subsection{Estimated Working time}
+\begin{center}
+
+\textbf{Estimated working time}
+\end{center}
+\begin{table}[h]
+\begin{tabular}{|p{0.4\textwidth}|p{0.2\textwidth}|}
+\hline
+\textbf{Task}                                              & \textbf{Time in hours                              } \\ \hline \hline
+Setting up the working environments &  1  \\ \hline 
+Running any example &  1  \\ \hline 
+UART &  1  \\ \hline 
+I2C Implementation &  4  \\ \hline 
+Debuging \& Testting &  10  \\ \hline 
+Documentation &  1  \\ \hline 
+\hline
+Total &  XXX \\ \hline 
+\end{tabular}
+\caption{Estimated working time}
+\end{table}
+
+
+\section{I2C General}
+%TODO
+
+\newpage
+\listoftables
+\listoffigures
+\printglossaries
+\subsection{Easy Bibliography}
+\begin{thebibliography}{56}
+
+\bibitem{name}
+   \textbf{Who}, When\\
+  \textit{url}
+  \newline last used: dd.mm.yyyy, hh:mm
+ 
+ \bibitem{example} 
+  \textbf{Mister Super-genious}, Answer from 20.01.2015\\
+  \textit{http://www.stackoverflow.com/question}
+  \newline last used: 22.10.2014, 21:00
+\end{thebibliography}
+\end{document}
